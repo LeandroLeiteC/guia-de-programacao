@@ -1,1 +1,29 @@
-<p>java works!</p>
+<div class="container pt-4">
+    <div class="row">
+        <h1>Guia de <span class="font-italic">Programação.</span></h1>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <h3 class="font-italic text-muted">Java</h3>
+        </div>
+        <div class="col-4">
+          <button class="btn btn-primary" (click)="modoExibicao()">
+            {{ card ? 'Exibição: Card' : 'Exibição: Lista' }}
+          </button>
+        </div>
+    </div>
+    <hr/>
+    <div class="mt-4">
+        <div *ngIf="card; else lista">
+            <app-card-guias [guias]='guias'></app-card-guias>
+        </div>
+    </div>
+</div>
+
+<ng-template #lista>
+  <ul>
+    <li *ngFor="let guia of guias">
+      <a class="nav-item nav-linka" [href]="guia.url" target="_blank" placement="right" [ngbTooltip]="guia.descricao">{{ guia.titulo }}</a>
+    </li>
+  </ul>
+</ng-template>
