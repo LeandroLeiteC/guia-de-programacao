@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {HomeModule} from './home/home.module';
 import {SobreMimModule} from './sobre-mim/sobre-mim.module';
 import {JavaModule} from './java/java.module';
+import {AngularModule} from './angular/angular.module';
 
 @NgModule({
   declarations: [],
@@ -10,7 +11,8 @@ import {JavaModule} from './java/java.module';
     CommonModule,
     HomeModule,
     SobreMimModule,
-    JavaModule
+    JavaModule,
+    AngularModule
 
   ]
 })
