@@ -16,4 +16,12 @@ export class HomeComponent implements OnInit {
   javaRedirect() {
     this.router.navigate(['/java']);
   }
+
+  gitRedirect() {
+    this.router.navigate(['/git-github']);
+  }
+
+  angularRedirect() {
+    this.router.navigate(['/angular']);
+  }
 }
