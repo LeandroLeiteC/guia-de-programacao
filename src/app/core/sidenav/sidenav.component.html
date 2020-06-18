@@ -8,11 +8,14 @@
     <div class="col-md-3 mt-5 text-center">
       <div class="bg-light">
         <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
-          <li ngbNavItem="top">
+          <li ngbNavItem="home">
             <a ngbNavLink routerLink="/home">Home</a>
           </li>
-          <li ngbNavItem="middle">
+          <li ngbNavItem="java">
             <a ngbNavLink routerLink="/java">Java</a>
+          </li>
+          <li ngbNavItem="sobre-mim">
+            <a ngbNavLink routerLink="/sobre-mim">Sobre mim</a>
           </li>
         </ul>
       </div>
