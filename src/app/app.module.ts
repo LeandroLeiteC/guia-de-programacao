@@ -17,8 +17,8 @@ import {PagesModule} from './pages/pages.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PagesModule,
-    NgbModule
+    NgbModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
