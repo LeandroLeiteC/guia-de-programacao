@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './core/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SidenavComponent } from './core/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    SidenavComponent,
   ],
   imports: [
     BrowserModule,

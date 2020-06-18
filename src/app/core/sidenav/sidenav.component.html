@@ -1,0 +1,25 @@
+<div class="container mt-3 border">
+  <div class="row">
+
+    <div class="col-md-9 border">
+      <router-outlet></router-outlet>
+    </div>
+
+    <div class="col-md-3 text-center">
+      <div class="bg-light">
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
+          <li ngbNavItem="top">
+            <a ngbNavLink routerLink="/home">Home</a>
+          </li>
+          <li ngbNavItem="middle">
+            <a ngbNavLink routerLink="/java">Java</a>
+          </li>
+        </ul>
+      </div>
+
+
+        <div [ngbNavOutlet]="nav" class="ml-4"></div>
+    </div>
+
+  </div>
+</div>
