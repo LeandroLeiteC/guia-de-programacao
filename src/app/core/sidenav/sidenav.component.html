@@ -1,11 +1,11 @@
-<div class="container mt-3 border">
+<div class="container bg-white">
   <div class="row">
 
-    <div class="col-md-9 border">
+    <div class="col-md-9">
       <router-outlet></router-outlet>
     </div>
 
-    <div class="col-md-3 text-center">
+    <div class="col-md-3 mt-5 text-center">
       <div class="bg-light">
         <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
           <li ngbNavItem="top">
@@ -16,8 +16,6 @@
           </li>
         </ul>
       </div>
-
-
         <div [ngbNavOutlet]="nav" class="ml-4"></div>
     </div>
 
