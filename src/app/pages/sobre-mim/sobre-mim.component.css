@@ -6,10 +6,6 @@
   color: blue;
 }
 
-.content {
-  background-color: rgba(233,233,233,0.2)
-}
-
 .nome {
   font-family: Castellar;
   font-size: 3rem;
@@ -18,4 +14,11 @@
 .no-background {
   background: none;
   border: none;
+}
+
+@media (max-width:767px){
+  .nome {
+    text-align:center;
+  }
+
 }

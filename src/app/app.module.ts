@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './core/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SidenavComponent } from './core/sidenav/sidenav.component';
+import {PagesModule} from './pages/pages.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SidenavComponent } from './core/sidenav/sidenav.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    PagesModule,
     NgbModule
   ],
   providers: [],
