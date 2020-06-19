@@ -1,0 +1,9 @@
+@media (max-width:991px){
+  .title {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+  }
+}
