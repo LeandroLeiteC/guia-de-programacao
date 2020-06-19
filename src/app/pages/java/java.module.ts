@@ -4,6 +4,7 @@ import { JavaComponent } from './java.component';
 import {CardGuiasModule} from '../../shared/card-guias/card-guias.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {HttpClientModule} from '@angular/common/http';
+import {TitleModule} from '../../shared/title/title.module';
 
 
 
@@ -13,6 +14,7 @@ import {HttpClientModule} from '@angular/common/http';
     CommonModule,
     CardGuiasModule,
     NgbModule,
+    TitleModule,
     HttpClientModule
   ]
 })

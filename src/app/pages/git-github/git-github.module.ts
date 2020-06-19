@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { GitGithubComponent } from './git-github.component';
 import {CardGuiasModule} from '../../shared/card-guias/card-guias.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {TitleModule} from '../../shared/title/title.module';
 
 
 
@@ -11,6 +12,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
   imports: [
     CommonModule,
     CardGuiasModule,
+    TitleModule,
     NgbModule
   ]
 })

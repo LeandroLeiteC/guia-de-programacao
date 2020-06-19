@@ -1,13 +1,10 @@
 <div class="container pt-4">
   <div class="row">
-    <h1>Guia de <span class="font-italic">Programação.</span></h1>
-  </div>
-  <div class="row">
-    <div class="col-8">
-      <h3 class="font-italic text-muted">Git & GitHub</h3>
+    <div class="col-10">
+      <app-title subtitle="Git & GitHub"></app-title>
     </div>
-    <div class="col-4">
-      <button class="btn btn-primary" (click)="modoExibicao()">
+    <div class="col-2 align-self-end">
+      <button class="btn btn-primary" (click)="modoExibicao()" >
         {{ card ? 'Exibição: Card' : 'Exibição: Lista' }}
       </button>
     </div>

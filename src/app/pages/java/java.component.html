@@ -1,17 +1,14 @@
 <div class="container pt-4">
-    <div class="row">
-        <h1>Guia de <span class="font-italic">Programação.</span></h1>
+  <div class="row">
+    <div class="col-10">
+      <app-title subtitle="Java"></app-title>
     </div>
-    <div class="row">
-        <div class="col-8">
-            <h3 class="font-italic text-muted">Java</h3>
-        </div>
-        <div class="col-4">
-          <button class="btn btn-primary" (click)="modoExibicao()">
-            {{ card ? 'Exibição: Card' : 'Exibição: Lista' }}
-          </button>
-        </div>
+    <div class="col-2 align-self-end">
+      <button class="btn btn-primary" (click)="modoExibicao()" >
+        {{ card ? 'Exibição: Card' : 'Exibição: Lista' }}
+      </button>
     </div>
+  </div>
     <hr/>
     <div class="mt-4">
         <div *ngIf="card; else lista">
