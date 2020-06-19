@@ -1,0 +1,12 @@
+[
+  {
+    "titulo": "Como ler arquivos",
+    "descricao": "Aprenda a ler arquivos, como utilizar as collections e um pouco de orientação ao objeto!",
+    "url": "https://github.com/LeandroLeiteC/desafio-LerArquivos"
+  },
+  {
+    "titulo": "Servlet",
+    "descricao": "Aprenda a mexer com servlet",
+    "url": "https://github.com/LeandroLeiteC/servlet"
+  }
+]

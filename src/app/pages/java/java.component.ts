@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Guia} from '../../shared/models/guia.model';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-java',
@@ -8,23 +9,18 @@ import {Guia} from '../../shared/models/guia.model';
 })
 export class JavaComponent implements OnInit {
 
-  card = true;
-  guias: Guia[] = [
-    {
-      titulo: 'Como ler arquivos',
-      descricao: 'Aprenda a ler arquivos, como utilizar as collections e um pouco de orientação ao objeto!',
-      url: 'https://github.com/LeandroLeiteC/desafio-LerArquivos'
-    },
-    {
-      titulo: 'Servlet',
-      descricao: 'Aprenda a mexer com servlet',
-      url: 'https://github.com/LeandroLeiteC/servlet'
-    }
-    ];
+  card = false;
+  guias: Guia[] = [];
+  private _urlJson: string = 'assets/db/java.json';
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.http.get<Guia[]>(this._urlJson)
+      .subscribe( response => {
+        this.guias = response;
+        this.modoExibicao();
+      });
   }
 
   modoExibicao() {
